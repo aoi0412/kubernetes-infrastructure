@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/your-org/kubernetes-infrastructure.git
+    repoURL: git@github.com:aoi0412/kubernetes-infrastructure.git
     targetRevision: main
     path: argocd
   syncPolicy:
