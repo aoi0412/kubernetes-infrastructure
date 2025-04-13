@@ -1,3 +1,3 @@
 resources:
-  - application.yaml
+  - application/
   - overlays/default
