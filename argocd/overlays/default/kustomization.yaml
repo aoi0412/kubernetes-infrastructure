@@ -1,5 +1,10 @@
 resources:
   - ../../base
 patches:
-  path:
-    - argocd-cm.yaml
+  - target:
+      kind: ConfigMap
+      name: argocd-cm
+    patch: |-
+      - op: replace
+        path: /data/timeout
+        value: "30s"
