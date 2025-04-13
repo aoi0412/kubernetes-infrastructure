@@ -1,4 +1,2 @@
-resources:
-  - manifests.yaml
-  - argocd-cm.yaml
-  - argocd-repo-creds.yaml
+bases:
+  - github.com/argoproj/argo-cd/manifests/cluster-install?ref=v1.0.1
