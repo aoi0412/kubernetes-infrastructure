@@ -1,0 +1,3 @@
+resources:
+  - https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.28.0/controller.yaml
+  - argocd/argocd-sealed-secret.yaml # ← 追加した SealedSecret

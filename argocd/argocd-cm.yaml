@@ -1,3 +1,4 @@
+### ArgoCDの設定用のファイル ###
 apiVersion: v1
 kind: ConfigMap
 metadata:

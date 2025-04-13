@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kubernetes-infrastructure
+  name: sealed-secret
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: git@github.com:aoi0412/kubernetes-infrastructure.git
-    targetRevision: HEAD
-    path: infrastructure
+    path: sealed-secret
+    targetRevision: main
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: sealed-secret
   syncPolicy:
     automated:
       prune: true
