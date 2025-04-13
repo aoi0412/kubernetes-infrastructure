@@ -1,7 +1,5 @@
 resources:
   - ../../base
-patchesStrategicMerge:
-  - argocd-cm.yaml
-  - argocd-params.yaml
-  - clusters-secrets.yaml
-  - repos-secrets.yaml
+patches:
+  path:
+    - argocd-cm.yaml
