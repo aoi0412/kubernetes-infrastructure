@@ -1,4 +1,4 @@
 resources:
   - application.yaml
-  - ../argocd/application.yaml
-  - ../sealed-secret/application.yaml
+  - ../argocd
+  - ../sealed
