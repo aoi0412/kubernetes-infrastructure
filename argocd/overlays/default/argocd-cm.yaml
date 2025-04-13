@@ -6,6 +6,7 @@ metadata:
   namespace: argocd
   labels:
     app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part: argocd
 data:
   admin.enabled: "true"
   # ここに他のUIや通知の設定など
