@@ -1,2 +1,2 @@
-bases:
-  - github.com/argoproj/argo-cd/manifests/cluster-install?ref=v1.0.1
+resources:
+  - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
