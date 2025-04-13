@@ -1,4 +1,3 @@
 resources:
   - manifests.yaml
   - argocd-cm.yaml
-  - argocd-repo-creds.yaml
