@@ -2,3 +2,4 @@ resources:
   - application.yaml
   - ../argocd/application
   - ../sealed-secret/application
+  - ../rook-ceph/application
