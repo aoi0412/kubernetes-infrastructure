@@ -1,0 +1,3 @@
+resources:
+  - application
+  - overlays/default
