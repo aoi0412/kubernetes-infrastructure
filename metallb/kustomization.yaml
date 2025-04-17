@@ -7,6 +7,4 @@ helmCharts:
     releaseName: metallb
     namespace: metallb-system
     valuesFile: values.yaml
-    additionalValuesFiles:
-      - additional-values.yaml
     valuesMerge: override
