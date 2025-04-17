@@ -1,3 +1,2 @@
 resources:
   - ../../base
-  - argocd-repo-sealed.yaml
