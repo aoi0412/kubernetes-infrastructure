@@ -1,7 +1,7 @@
 resources:
   - application
   # - cluster.yaml
-  - toolbox.yaml
+  # - toolbox.yaml
 helmCharts:
   - name: rook-ceph
     repo: https://charts.rook.io/release
