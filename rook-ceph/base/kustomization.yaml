@@ -1,4 +1,4 @@
-resource:
+resources:
   - crds.yaml
   - common.yaml
   - operator.yaml
