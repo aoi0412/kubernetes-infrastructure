@@ -11,7 +11,7 @@ spec:
     path: metallb
   destination:
     server: https://kubernetes.default.svc
-    namespace: metalb-system
+    namespace: metalb
   syncPolicy:
     automated:
       prune: true
