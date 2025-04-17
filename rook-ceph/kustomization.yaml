@@ -1,6 +1,6 @@
 resources:
-  - application
   - base
+  - application
 # helmCharts:
 #   - name: rook-ceph
 #     repo: https://charts.rook.io/release

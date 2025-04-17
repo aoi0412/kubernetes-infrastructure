@@ -8,21 +8,8 @@ patches:
       kind: PodSecurityPolicy
       name: 00-rook-privileged
     patch: |-
-      - op: remove
-        path: /apiVersion
-      - op: remove
-        path: /kind
-      - op: remove
-        path: /metadata/name
-      - op: remove
-        path: /spec
-  - target:
-      kind: ClusterRole
-      name: psp:rook
-    patch: |-
-      - op: remove
-        path: /apiVersion
-      - op: remove
-        path: /kind
-      - op: remove
-        path: /metadata/name
+      apiVersion: policy/v1beta1
+      kind: PodSecurityPolicy
+      metadata:
+        name: 00-rook-privileged
+      spec: {}
