@@ -11,3 +11,20 @@ cephClusterSpec:
           - name: "sdb"
 toolbox:
   enabled: true
+csi:
+  rbdProvisionerResource:
+    requests:
+      cpu: 50m
+      memory: 32Mi
+  rbdPluginResource:
+    requests:
+      cpu: 50m
+      memory: 32Mi
+  cephFSProvisionerResource:
+    requests:
+      cpu: 50m
+      memory: 32Mi
+  cephFSPluginResource:
+    requests:
+      cpu: 50m
+      memory: 32Mi
