@@ -1,6 +1,5 @@
 resources:
   - application
-  - overlays/default
 helmCharts:
   - name: ingress-nginx
     repo: https://kubernetes.github.io/ingress-nginx

@@ -1,3 +1,5 @@
+resources:
+  - application
 helmCharts:
   - name: metallb
     repo: https://metallb.github.io/metallb
