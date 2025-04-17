@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:aoi0412/kubernetes-application.git
+    repoURL: git@github.com:aoi0412/kubernetes-infrastructure.git
     targetRevision: main
     path: rook-ceph
     plugin: null
