@@ -5,3 +5,4 @@ resources:
   - ../rook-ceph/application
   - ../metallb/application
   - ../ingress-nginx/application
+  - ../cloudflared/application
