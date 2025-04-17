@@ -1,5 +1,7 @@
 resources:
   - application
+patchesStrategicMerge:
+  - additional-values.yaml
 helmCharts:
   - name: metallb
     repo: https://metallb.github.io/metallb
@@ -7,5 +9,3 @@ helmCharts:
     releaseName: metallb
     namespace: metallb-system
     valuesFile: values.yaml
-patchesStrategicMerge:
-  - additional-values.yaml
