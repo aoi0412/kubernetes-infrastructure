@@ -1,5 +1,6 @@
-speaker:
-  livenessProbe:
-    enabled: false
-  readinessProbe:
-    enabled: false
+configInline:
+  address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+        - 192.168.3.201-192.168.2.250 # ← ここは自分のネットワークに合わせて変えてね
