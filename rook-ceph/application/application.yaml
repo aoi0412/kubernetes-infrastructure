@@ -10,8 +10,8 @@ spec:
     targetRevision: main
     path: rook-ceph
     plugin: null
-    kustomize:
-      enableHelm: true
+    # kustomize:
+    #   enableHelm: true
   destination:
     server: "https://kubernetes.default.svc"
     namespace: rook-ceph
