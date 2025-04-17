@@ -1,6 +1,6 @@
 resources:
   - application
-  - sc-pc.yaml
+  - sc-pv.yaml
   # - cluster.yaml
   # - toolbox.yaml
 helmCharts:
