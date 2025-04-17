@@ -28,3 +28,11 @@ csi:
     requests:
       cpu: 50m
       memory: 32Mi
+osd:
+  requests:
+    cpu: 50m
+    memory: 128Mi
+crashcollector:
+  requests:
+    cpu: 50m
+    memory: 128Mi
