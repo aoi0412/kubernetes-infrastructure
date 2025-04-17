@@ -1,15 +1,2 @@
 resources:
-  - crds.yaml
-  - common.yaml
-  - operator.yaml
-  - cluster.yaml
-patches:
-  - target:
-      kind: PodSecurityPolicy
-      name: 00-rook-privileged
-    patch: |-
-      apiVersion: policy/v1beta1
-      kind: PodSecurityPolicy
-      metadata:
-        name: 00-rook-privileged
-      spec: {}
+  - application.yaml
