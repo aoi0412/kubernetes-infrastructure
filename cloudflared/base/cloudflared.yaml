@@ -90,6 +90,8 @@ data:
     # The first rule proxies traffic to the httpbin sample Service defined in app.yaml
     - hostname: argocd.tamao.blue
       service: https://argocd-server.argocd.svc.cluster.local
+      originRequest:
+        noTLSVerify: true
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
     # in the connection from cloudflared to your local service, not from the internet to cloudflared.
