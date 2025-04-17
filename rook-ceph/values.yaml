@@ -1,0 +1,13 @@
+cephClusterSpec:
+  storage:
+    useAllNodes: false
+    useAllDevices: false
+    nodes:
+      - name: "tama-workernode01"
+        devices:
+          - name: "sdb"
+      - name: "tama-workernode02"
+        devices:
+          - name: "sdb"
+toolbox:
+  enabled: true

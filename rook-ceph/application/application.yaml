@@ -3,21 +3,21 @@ kind: Application
 metadata:
   name: rook-ceph
   namespace: argocd
-  annotations:
-    argocd.argoproj.io/sync-wave: "-1"
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://charts.rook.io/release
-    chart: rook-ceph
-    targetRevision: v1.13.6
+    repoURL: git@github.com:aoi0412/kubernetes-application.git
+    targetRevision: main
+    path: rook-ceph
+    plugin: null
+    kustomize:
+      enableHelm: true
   destination:
     server: "https://kubernetes.default.svc"
     namespace: rook-ceph
   syncPolicy:
-    # automated: 
-    #   prune: true
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=true
