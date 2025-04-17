@@ -3,3 +3,14 @@ resources:
   - common.yaml
   - operator.yaml
   - cluster.yaml
+patches:
+  - target:
+      kind: PodSecurityPolicy
+      name: 00-rook-privileged
+    patch: |-
+      $patch: delete
+  - target:
+      kind: ClusterRole
+      name: psp:rook
+    patch: |-
+      $patch: delete
