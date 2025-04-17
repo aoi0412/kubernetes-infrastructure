@@ -5,10 +5,10 @@ cephClusterSpec:
     nodes:
       - name: "tama-workernode01"
         devices:
-          - name: "sdb"
+          - name: "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_drive-scsi1"
       - name: "tama-workernode02"
         devices:
-          - name: "sdb"
+          - name: "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_drive-scsi1"
 toolbox:
   enabled: true
 csi:
