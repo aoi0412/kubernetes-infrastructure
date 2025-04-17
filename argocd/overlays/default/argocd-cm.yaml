@@ -9,4 +9,5 @@ metadata:
     app.kubernetes.io/part: argocd
 data:
   admin.enabled: "true"
+  kustomize.buildOptions: "--enable-helm"
   # ここに他のUIや通知の設定など
