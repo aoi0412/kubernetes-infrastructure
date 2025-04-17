@@ -6,4 +6,6 @@ helmCharts:
     version: "0.14.8"
     releaseName: metallb
     namespace: metallb-system
+    additionalValuesFiles:
+      - additional-values.yaml
     valuesFile: values.yaml
