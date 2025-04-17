@@ -1,7 +1,7 @@
 resources:
   - application
   - sc-pv.yaml
-  # - cluster.yaml
+  - cluster.yaml
   # - toolbox.yaml
 helmCharts:
   - name: rook-ceph
