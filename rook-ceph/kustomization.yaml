@@ -2,7 +2,7 @@ resources:
   - application
   - sc-pv.yaml
   - cluster.yaml
-  # - toolbox.yaml
+  - toolbox.yaml
 patchesStrategicMerge:
   - rook-ceph-cluster-patch.yaml
   - rook-ceph-operator-toleration-patch.yaml
