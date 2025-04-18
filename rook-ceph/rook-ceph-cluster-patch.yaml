@@ -26,22 +26,16 @@ spec:
         count: 1
         portable: false
         tuneSlowDeviceClass: true
-        placement:
-          podAntiAffinity:
-            preferredDuringSchedulingIgnoredDuringExecution:
-              - weight: 100
-                podAffinityTerm:
-                  labelSelector:
-                    matchExpressions:
-                      - key: app
-                        operator: In
-                        values:
-                          - rook-ceph-osd
-                      - key: app
-                        operator: In
-                        values:
-                          - rook-ceph-osd-prepare
-                  topologyKey: kubernetes.io/hostname
+        # 一時的に無効化
+        # placement:
+        #   podAntiAffinity:
+        #     preferredDuringSchedulingIgnoredDuringExecution:
+        #       - weight: 100
+        #         podAffinityTerm:
+        #           labelSelector:
+        #             matchLabels:
+        #               app: rook-ceph-osd
+        #           topologyKey: kubernetes.io/hostname
         resources:
         volumeClaimTemplates:
           - metadata:
