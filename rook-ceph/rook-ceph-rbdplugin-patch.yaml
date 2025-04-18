@@ -12,6 +12,9 @@ spec:
             - name: lib-modules
               mountPath: /lib/modules
               readOnly: true
+          env:
+            - name: CSI_FORCE_CEPH_KERNEL_CLIENT
+              value: "true"
       volumes:
         - name: lib-modules
           hostPath:

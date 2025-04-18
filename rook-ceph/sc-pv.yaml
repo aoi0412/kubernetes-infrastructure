@@ -14,7 +14,7 @@ metadata:
 spec:
   storageClassName: manual
   capacity:
-    storage: 5Gi
+    storage: 150Gi
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
@@ -29,3 +29,4 @@ spec:
               operator: In
               values:
                 - tama-workernode01
+                - tama-workernode02
