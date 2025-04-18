@@ -29,4 +29,4 @@ spec:
               operator: In
               values:
                 - tama-workernode01
-                - tama-workernode02
+                # - tama-workernode02
