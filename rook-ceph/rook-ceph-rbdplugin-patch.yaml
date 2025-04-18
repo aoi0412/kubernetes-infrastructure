@@ -1,0 +1,8 @@
+apiVersion: v1
+items:
+  - status:
+      containerStatuses:
+        - volumeMounts:
+            - mountPath: /lib/modules
+              name: lib-modules
+              readOnly: true
