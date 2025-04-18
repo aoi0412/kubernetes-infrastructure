@@ -1,8 +1,19 @@
-apiVersion: v1
-items:
-  - status:
-      containerStatuses:
-        - volumeMounts:
-            - mountPath: /lib/modules
-              name: lib-modules
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: csi-rbdplugin
+  namespace: rook-ceph
+spec:
+  template:
+    spec:
+      containers:
+        - name: csi-rbdplugin
+          volumeMounts:
+            - name: lib-modules
+              mountPath: /lib/modules
               readOnly: true
+      volumes:
+        - name: lib-modules
+          hostPath:
+            path: /lib/modules
+            type: Directory

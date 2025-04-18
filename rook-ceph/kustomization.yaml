@@ -6,7 +6,7 @@ resources:
 patchesStrategicMerge:
   - rook-ceph-cluster-patch.yaml
   - rook-ceph-operator-toleration-patch.yaml
-  # - rook-ceph-rbdplugin-patch.yaml
+  - rook-ceph-rbdplugin-patch.yaml
 helmCharts:
   - name: rook-ceph
     repo: https://charts.rook.io/release
