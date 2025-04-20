@@ -14,7 +14,7 @@ spec:
   skipUpgradeChecks: false
   continueUpgradeAfterChecksEvenIfNotHealthy: false
   dashboard:
-    enabled: false
+    enabled: true
     ssl: true
   network:
     hostNetwork: false
