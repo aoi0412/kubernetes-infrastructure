@@ -1,5 +1,5 @@
 resources:
-  - application
+  # - application
   - sc-pv.yaml
   - cluster.yaml
   - toolbox.yaml
