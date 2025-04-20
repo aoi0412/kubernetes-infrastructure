@@ -3,6 +3,7 @@ resources:
   - sc-pv.yaml
   - cluster.yaml
   - toolbox.yaml
+  - rook-ceph-dashboard-loadbalancer.yaml
 patchesStrategicMerge:
   - rook-ceph-cluster-patch.yaml
   - rook-ceph-operator-toleration-patch.yaml
