@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: git@github.com:aoi0412/kubernetes-infrastructure.git
-    targetRevision: main
+    targetRevision: HEAD
     path: rook-ceph
     plugin: null
     # kustomize:
