@@ -29,28 +29,28 @@ spec:
               operator: In
               values:
                 - tama-workernode01
-                ---
-                  kind: PersistentVolume
-                  apiVersion: v1
-                  metadata:
-                    name: local-osd-tama-workernode01
-                    labels:
-                      type: local-osd
-                  spec:
-                    storageClassName: manual
-                    capacity:
-                      storage: 150Gi
-                    accessModes:
-                      - ReadWriteOnce
-                    persistentVolumeReclaimPolicy: Retain
-                    volumeMode: Block
-                    local:
-                      path: /dev/sdb
-                    nodeAffinity:
-                      required:
-                        nodeSelectorTerms:
-                          - matchExpressions:
-                              - key: kubernetes.io/hostname
-                                operator: In
-                                values:
-                                  - tama-workernode02
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: local-osd-tama-workernode01
+  labels:
+    type: local-osd
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 150Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  volumeMode: Block
+  local:
+    path: /dev/sdb
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - tama-workernode02
