@@ -6,8 +6,14 @@ metadata:
 spec:
   dataDirHostPath: /var/lib/rook
   mon:
-    count: 1
+    count: 3
     allowMultiplePerNode: false
+  mgr:
+    modules:
+      - name: dashboard
+        enabled: true
+    count: 1
+    standbyCount: 1
   cephVersion:
     image: ceph/ceph:v18.2.2
     allowUnsupported: false
