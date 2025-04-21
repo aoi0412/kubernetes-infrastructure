@@ -50,7 +50,7 @@ spec:
               resources:
                 requests:
                   storage: 5Gi
-              storageClassName: manual
+              storageClassName: rook-ceph-block
               volumeMode: Block
               accessModes:
                 - ReadWriteOnce

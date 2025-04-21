@@ -1,8 +1,9 @@
 resources:
   - application
-  - sc-pv.yaml
+  # - sc-pv.yaml
   - cluster.yaml
   - toolbox.yaml
+  - rook-ceph-cephblockpool.yaml
   - rook-ceph-dashboard-loadbalancer.yaml
 patchesStrategicMerge:
   - rook-ceph-cluster-patch.yaml
