@@ -6,7 +6,7 @@ metadata:
 spec:
   dataDirHostPath: /var/lib/rook
   mon:
-    count: 3
+    count: 2
     allowMultiplePerNode: false
   mgr:
     modules:
