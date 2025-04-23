@@ -3,3 +3,5 @@ resources:
   - ingress.yaml
 patchesStrategicMerge:
   - argocd-cm.yaml
+  - patch-repo-server-resources.yaml
+  - patch-dex-server-resources.yaml
