@@ -27,6 +27,10 @@ spec:
   crashCollector:
     disable: true
   storage:
+    useAllNodes: true
+    useAllDevices: true
+    config:
+      storeType: bluestore
     storageClassDeviceSets:
       - name: set1
         count: 1
