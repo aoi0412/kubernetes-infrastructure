@@ -11,3 +11,5 @@ data:
   admin.enabled: "true"
   kustomize.buildOptions: "--enable-helm"
   # ここに他のUIや通知の設定など
+  controller.cleanup.resources: |
+    completedPod: true
